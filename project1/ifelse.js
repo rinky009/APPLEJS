@@ -1,9 +1,8 @@
-const num=12;
-if(num==11);
-{
+const num=11;
+if(num==11){
     console.log('number is 11');
 }
-else if(num==12);{
+else if(num==12){
 console.log('number is 12');
 }
 else{
