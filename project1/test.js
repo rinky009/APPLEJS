@@ -1,1 +1,1 @@
-my name is ABC
+console.log(this);
