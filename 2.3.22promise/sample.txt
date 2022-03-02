@@ -1,0 +1,1 @@
+promises is an alternative for callback, to avoid callback hell.bangalorebangalorebangalore
