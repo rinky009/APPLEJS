@@ -1,0 +1,46 @@
+<h1>Details of Registration Form is <%= student.length %></h1> <br><br>
+<a href='/studentForm'>Add Student</a><br>
+    <table border="1">
+        <tr>
+            
+            <th>uid</th>
+            <th>name</th>
+            <th>password</th>
+            <th>gender</th>
+            <th>education</th>
+            <th>pincode</th>
+            <th>panno</th>
+
+
+        </tr>
+        <% for(var i=0; i < JSON.stringify(student.length); i++) { %>
+            <tr>
+                
+                 <td>
+                    <%=student[i].uid%>
+                </td>
+                <td>
+                    <%=student[i].name%>
+                </td>
+                <td>
+                    <%=student[i].password%>
+                </td>
+                <td>
+                    <%=student[i].gender%>
+                </td>
+                <td>
+                    <%=student[i].education%>
+                </td>
+                <td>
+                    <%=student[i].pincode%>
+                </td>
+                <td>
+                    <%=student[i].panno%>
+                </td>
+                <td>
+                    <a href='/getRecordid/<%=student[i].uid%>'>Update</a>
+                    <a href="/deleteRecord/<%=student[i].uid%>" onclick="return confirm ('Are you sure?')">Delete</a>
+                </td>
+            </tr>
+            <% } %>
+    </table>

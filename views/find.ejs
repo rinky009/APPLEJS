@@ -1,0 +1,23 @@
+<h1>find student data is<%= student.length %></h1>
+    <table border ="1">
+    <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>sub</th>
+        </tr>
+<% for(var i=0; i<JSON.stringify(student.length);i++) { %>
+<tr>
+    
+    <td>
+        <%= student[i].name %>
+    </td>
+    <td>
+        <%= student[i].age %>
+    </td>
+    <td>
+        <%= student[i].sub %>
+    </td>
+    </tr>
+    <% } %>
+</table>
+
