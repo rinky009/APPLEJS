@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <style>
+            h1 {text-align: center;}
+            p {text-align: center;}
+            div {text-align: center;}
+            </style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Bank Login Form</title>
+        <!-- the form awesome library is used to add icons to our form -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <!-- include the stylesheet file -->
+        <link href="/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="Banklogin">
+			<style>
+				body {
+					background-color: rgb(221, 241, 103);
+					margin-left: 20px;
+				}
+			</style>
+			<h1>Bank Login Form</h1>
+			<form action="/auth" method="post">
+				<label for="username">
+					<!-- font awesome icon -->
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="bid" placeholder="bid" id="bid" required><br><br>
+				<label for="password">
+					<i class="fas fa-lock"></i>  
+				</label>
+				<input type="password" name="password" placeholder="password" id="password" required><br> <br>
+				<input type="submit" value="Login">
+			</form>
+            <% if (errMsg !== '') {%> 
+                <p style="color:red; font-size:70%;"><%= errMsg %></p> 
+            <% } else {%>
+                <p style="color:green; font-size:70%;"><%= msg %></p> 
+            <% } %>
+            
+            
+		<form method="post"name="form2"action="/BankDetails">
+		<input type="submit"value="signup">
+		</form>
+		</div>
+	</body>
+</html>
+
