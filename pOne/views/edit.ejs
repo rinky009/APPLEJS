@@ -1,0 +1,36 @@
+
+<h1> Edit Registration Form </h1><br>
+
+<form method="POST" name="form1" action="/updateRecordbyid?id=<%=student.uid%>">
+
+    <label>name</label>
+    <input type="text" id="name" name="name" value="<%=student.name%>"> <br><br>
+
+    <label>email</label>
+    <input type="text" id="email" name="email" value="<%=student.email%>"><br><br>
+
+
+    <label>password</label>
+    <input type="text" id="password" name="passward" value="<%=student.password%>"><br><br>
+
+    <label>education</label>
+    <input type="text" id="education" name="education" value=" <%=student.education%>"><br><br>
+
+    <label>panno</label>
+    <input type="text" id="panno" name="panno" value=" <%=student.panno%>"><br><br>
+
+     <label for="gender">Gender</label>
+
+    <select name="gender" value="<%=student.gender%>">
+        <option value="none" selected>Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">other</option>
+    </select><br><br>
+ <label>Pincode</label>
+    <input type="number" id="pincode" name="pincode" value="<%=student.pincode%>"> <br><br>
+    <button>Save </button>
+    <input type="hidden" value=" <%=student.uid%>"><br>
+</form>
+
+<a href='/getRecord'> <input type="submit" value="Cancel"> </a>

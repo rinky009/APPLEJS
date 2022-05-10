@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    
+</head>
+
+<body>
+    <% if (msg && msg==='success' ) { %>
+        <h2 style="color:green; font-size:70%;">
+            <p>attendance sucessfully marked! </p>
+        </h2>
+        <% } else if(msg && msg==='failure' ){%>
+            <h2 style="color:red; font-size:70%;">
+                <p>You have already marked the attendance! </p>
+            </h2>
+            <% } %>
+                
+</body>
+
+</html>

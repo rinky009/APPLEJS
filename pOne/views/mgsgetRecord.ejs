@@ -1,0 +1,30 @@
+<h1>Details of message <%= student.length %></h1> <br><br>
+<a href='/mgsshow'>Add massage</a><br>
+    <table border="1">
+        <tr>
+            
+            <th>mid</th>
+            <th>massage</th>
+            <th>date</th>
+            
+
+        </tr>
+        <% for(var i=0; i < JSON.stringify(student.length); i++) { %>
+            <tr>
+                
+                 <td>
+                    <%=student[i].mid%>
+                </td>
+                <td>
+                    <%=student[i].massage%>
+                </td>
+                <td>
+                    <%=student[i].date%>
+                </td>
+               <td>
+                    <a href='/mgsgetRecordid/<%=student[i].mid%>'>Update</a>
+                    <a href='/mgsdeleteRecord/<%=student[i].mid%>'onclick="return confirm (' Are you sure')">Delete</a>
+                </td>
+            </tr>
+            <% } %>
+    </table>

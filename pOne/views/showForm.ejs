@@ -1,0 +1,61 @@
+
+<html>
+    <body>
+    
+    <h2>HTML Forms</h2>
+    
+<form method="POST" name="form1" action="/postRegDetails">
+    <label >Enter your user Fname</label><br>
+    <input type="text" id="fname" name="fname"><br>
+
+    <label >Enter your user Lname</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+    <label >Enter your email</label><br>
+    <input type="text" id="email" name="email"><br>
+    
+    <label >Enter your Phone no.</label><br>
+    <input type="text" id="no" name="no"><br><br>
+
+    <h2> use Radio Buttons</h2>
+<p>Choose your favorite Web language:</p>
+<input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label><br><br>
+
+
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<input type="checkbox" id="address" name="address" value="ranchi">
+  <label for="address"> permanent add</label><br>
+  <input type="checkbox" id="address1" name="addrss1" value="delhi">
+  <label for="address1"> current add</label><br><br>
+
+  <h2>Pre-selected Option</h2>
+
+<p>You can preselect an option with the selected attribute:</p>
+  <label for="id">Choose a id:</label>
+  <select id="id" name="id">
+    <option value="PAN">PAN</option>
+    <option value="voter_id">voter_id</option>
+    <option value="emai" selected>email</option>
+    <option value="facebook">facebook</option>
+</select><br><br>
+
+
+<input type="submit" value="submit">
+    </form>
+   
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+
+     <p>If you click the "Submit" button, the form-data will be sent to a page called
+        "/postRegDetails".</p>
+        
+
+</body>
+</html>
+

@@ -1,0 +1,103 @@
+<h1><marquee>welcome to admin page</marquee></h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(92, 48, 48);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(162, 149, 235);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: rgb(68, 187, 74);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #e7cfe2;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(245, 150, 150);
+  padding: 10px;
+  text-align: center;
+  color: rgb(206, 13, 231);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Admin</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="admingetRecord">ADMIN</a></li>
+      <li><a href="getRecord">Userupdate</a></li>
+      <li><a href="mgsgetRecord">massage</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" value="name"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      
+  </article>
+</section>
+
+<footer>
+  <p>admin</p>
+</footer>
+
+</body>
+</html>

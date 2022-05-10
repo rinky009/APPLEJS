@@ -1,0 +1,16 @@
+
+<h1> Edit massage </h1><br>
+
+<form method="POST" name="form1" action="/mgsupdateRecordbyid?id=<%=student.mid%>">
+
+    <label>name</label>
+    <input type="text" id="massage" name="massage" value="<%=student.massage%>"> <br><br>
+
+    <label>date</label>
+    <input type="text" id="date" name="date" value="<%=student.date%>"><br><br>
+
+    <button>Save </button>
+    <input type="hidden" value=" <%=student.mid%>"><br>
+</form>
+
+<a href='/mgsgetRecord'> <input type="submit" value="Cancel"> </a>
